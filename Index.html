@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header>
+    <div class="banner">Renungan Pagi</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="form.html">Contact us</a>
+    </nav>
+
+</header>
+
+<main>
+<body>
+
+<h1 align="center">Sifat-sifat Rasulullah yang wajib diteladani</h1>
+<p align="center">"Di tengah lautan kehidupan yang penuh dengan lika-liku, tantangan, dan pilihan yang seringkali membingungkan hati serta pikiran manusia, sosok Rasulullah Muhammad ﷺ muncul sebagai pelita yang menerangi jalan, teladan yang tak ternilai harganya, dan sumber inspirasi abadi bagi seluruh umat manusia tanpa memandang batasan waktu, tempat, atau latar belakang. Kehadiran Beliau tidak hanya membawa pesan kebenaran yang menyelamatkan jiwa, melainkan juga menunjukkan dengan nyata bagaimana sifat-sifat mulia seperti kesabaran yang tak tergoyahkan, kejujuran yang tak pernah tercoreng, kasih sayang yang melampaui batas, kebijaksanaan yang mendalam, keadilan yang tegas, kemurahan hati yang melimpah, serta kesederhanaan yang menginspirasi bisa menyatu dalam satu pribadi, menjadi contoh hidup yang patut dicontoh dan diamalkan dalam setiap aspek kehidupan – mulai dari hubungan dengan Tuhan Yang Maha Esa, interaksi dengan sesama manusia, hingga bagaimana merespons segala bentuk ujian dan nikmat yang datang. Sifat-sifat teladan Rasulullah ﷺ bukan sekadar cerita sejarah yang hanya layak dikenang, melainkan prinsip-prinsip hidup yang relevan dan mampu membawa perubahan positif bagi diri sendiri, keluarga, masyarakat, dan bahkan dunia pada umumnya, karena setiap nilai yang terkandung di dalamnya mengajarkan kita untuk menjadi pribadi yang lebih baik, penuh kasih, dan bermanfaat bagi sesama."</p>
+
+<div class="beranda">
+    <div class="box">
+        <img src="satu.jpg" alt="Gambar 1">
+        <p><b><a href="gallery.html">Sabar yang Luar Biasa</a></b></p>
+    </div>
+
+    <div class="box">
+        <img src="dua.jpg" alt="Gambar 2">
+        <p><b><a href="gallery.html">jujur dan Terpercaya</a></b></p>
+    </div>
+
+    <div class="box">
+        <img src="tiga.jpg" alt="Gambar 3">
+        <p><b><a href="gallery.html">Sayang yang Universal</a></b></p>
+    </div>
+</div>
+</main>
+
+<footer>
+    <p>© 2025 |Muhammad Ariq Rabbani - 251011701124 - 01SIFP014</p>
+    <p id="jam"></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.beranda {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+header {
+    background: #7F1D1D;
+    background-image: url(empat.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.banner {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background: rgba(73, 73, 73, 0.5);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a.active {
+    background-color: darkkhaki;
+    color: black;
+    border-radius: 6px;
+}
+
+main {
+    padding: 20px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 200px;
+}
+
+footer {
+    background: #6e6a5d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.caption h3 {
+    margin-bottom: 8px;
+}
+
+.caption p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}

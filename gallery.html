@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header>
+    <div class="banner">GALLERY</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="form.html">Contact us</a>
+    </nav>
+</header>
+
+<main>
+    <div class="gallery">
+    <div class="card">
+        <img src="satu.jpg" alt="Gambar 1">
+        <div class="caption">
+            <h3>Sifat Sabar yang Luar Biasa</h3>
+            <p>Di Madinah, seorang wanita menuangkan air kotor ke kepala Rasulullah ﷺ saat bersiap shalat.
+Sahabat ingin menghukumnya, tapi Beliau menyuruh tidak demikian.
+Wanita itu punya anak sakit dan merasa tidak adil.
+Rasulullah ﷺ tidak marah, beri nasihat lembut, dan kirim sahabat bantu obati anaknya.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="dua.jpg" alt="Gambar 2">
+        <div class="caption">
+            <h3>Sifat Jujur dan Terpercaya</h3>
+            <p>Sebelum diutus, Rasulullah ﷺ dikenal sebagai "Al-Amin" (jujur dan terpercaya).
+Seorang pedagang simpan barang berharga padanya, lalu wafat.
+Beliau cari keluarga pedagang dan kembalikan barangnya lengkap dengan rincian.
+Meski jadi utusan Allah SWT, Beliau tetap jaga tanggung jawab dan kepercayaan.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="tiga.jpg" alt="Gambar 3">
+        <div class="caption">
+            <h3>Sifat Kasih Sayang yang Universal</h3>
+            <p>Rasulullah ﷺ menyayangi semua makhluk Allah SWT.
+Beliau sayang anak-anak, pernah susun sorban jadi tempat duduk untuk cucu Hasan bin Ali.
+Baik kepada orang berbeda keyakinan dan musafir tanpa tempat tinggal.
+Ajarkan bahwa kasih sayang harus dimiliki setiap muslim, karena Allah Maha Pemurah.</p>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<footer>
+    <p>© 2025 |Muhammad Ariq Rabbani - 251011701124 - 01SIFP014</p>
+    <p id="jam"></p>
+</footer>
+
+</body>
+</html>

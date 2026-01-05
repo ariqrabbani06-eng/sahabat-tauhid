@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact us</title>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header>
+    <div class="banner">SURVEI KEPUASAN PENGUNJUNG</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="form.html">Contact us</a>
+    </nav>
+</header>
+
+<main>
+    <h2 align="center">Data Pengunjung</h2>
+    <form method="post" action="">
+    <table align="center" bgcolor="white" border="0" cellspacing="10">
+        <tr>
+            <td>Username</td>
+            <td>
+            <input type="text" name="nama" size="25" 
+            required="" placeholder="masukkan Username anda">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+            <input type="text" name="nama" size="25" 
+            required="" placeholder="masukkan Email anda">
+            </td>
+        </tr>
+        <tr>
+                <td>Usia</td>
+                <td>
+                    <input type="number" name="usia" size="20" 
+                    required="" placeholder="masukkan Usia anda">
+                </td>    
+        </tr>
+        <tr>
+                <td>Jenis kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="laki-laki">
+                    laki-laki
+                    <input type="radio" name="jk" value="Perempuan">
+                    Perempuan
+                </td>    
+            </tr>
+        <tr>
+                <td>Warga Negara</td>
+                <td>
+                    <select name="Kota" 
+                    <option>--Pilih Kota--</option>
+                    <option>Indonesia</option>
+                    <option>Asing</option>
+                </select>
+                </td>    
+            </tr>
+             <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" name="submit" value="KIRIM">
+                    <input type="reset" name="reset" value="BATAL">
+                </td>
+
+            </tr>
+            <tr>
+            <td align="right">
+                <a href="Index.html"><i>Back to Home</i></a>
+            </td>
+        </tr>
+    </table>
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 | Muhammad Ariq Rabbani - 251011701124 - 01SIFP014</p>
+    <p id="jam"></p>
+
+</footer>
+
+</body>
+</html>
